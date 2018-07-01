@@ -211,3 +211,10 @@ marker.addListener('click',function(){
                 "lightness": 16
             }
         ]
+var infoWindow = new google.maps.InfoWindow({
+  content:'<h1 style="color:#08fdd8;">Malayattoor</h1>'
+});
+
+marker.addListener('click',function(){
+  infoWindow.open(map, marker);
+})
